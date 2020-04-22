@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat With Node and Socket</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+    <h1>Simple Chat With Node and Socket</h1>
+    <div id="messages"></div>
+
+    <form onsubmit="return addMessage(this);">
+        <input id="nickname" type="text" placeholder="Nick">
+        <input id="text" type="text" placeholder="Mensaje">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
